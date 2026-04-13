@@ -1,0 +1,144 @@
+\documentclass{article}
+
+\usepackage{lipsum}
+\usepackage[a4paper,margin=1in,heightrounded]{geometry}
+%
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usepackage{tikzpagenodes}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{shapes,shadows,calc}
+% \renewcommand*\familydefault{\sfdefault} %%
+%
+\usetikzlibrary{calc}
+\usepackage{lmodern}
+\usepackage[a-2b,mathxmp]{pdfx}
+%
+\begin{filecontents*}[overwrite]{\jobname.xmpdata}
+   \Title{Certificate of attendance}
+   \Author{Antonia Larese}
+   \Language{en-GB}
+   \Subject{Certificate of attendance Hydrorom Workshop}
+\end{filecontents*}
+%
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{tikzpicture}[overlay,remember picture]
+
+   \coordinate (NW) at ($(current page text area.north west) + (-1cm,+1cm)$);
+   \coordinate (NE) at ($(current page text area.north east) + (+1cm,-1cm)$);
+   \coordinate (SW) at ($(current page text area.south west) + (-1cm,+1cm)$);
+   \coordinate (SE) at ($(current page text area.south east) + (+1cm,-1cm)$);
+   \coordinate (ON) at ($0.5*(NW)+0.5*(NE)$);
+
+   % \draw[fill=red] (NW) circle [radius=5mm];
+
+   \draw [
+      color=BrickRed,
+      line width=10pt,
+      rounded corners=0pt,
+   ]
+   ($ (current page text area.north west) + (-1cm,+1cm) $)
+   rectangle
+   ($ (current page text area.south east) + (+1cm,-1cm) $);
+
+   \draw [
+      color=BrickRed,
+      line width=2pt,
+      rounded corners=0pt,
+   ]
+   ($ (current page text area.north west) + (-1.5cm,+1.5cm) $)
+   rectangle
+   ($ (current page text area.south east) + (+1.5cm,-1.5cm) $);
+
+   \node[anchor=north] (logosunipd) at ([yshift=-2mm]$(ON)$) {
+      \raisebox{-0.5\height}{\includegraphics[height=16mm]{logos/logo_unipd.png}}
+      \hspace{9mm}
+      \raisebox{-0.5\height}{\includegraphics[height=13mm]{
+         logos/logo_dm.png}}
+   };
+
+   \node[anchor=north] (logokratos) at ([yshift=-20mm]$(ON)$) {
+      \includegraphics[height=30mm]{logos/logo_bw.png}
+   };
+
+   \node[
+      anchor=north,
+      font=\fontsize{32}{60}\selectfont\bfseries,
+      align=center
+      ] (attendance) at ([yshift=-8mm]logokratos.south)
+      {Certificate of Attendance};
+
+   \node[
+      anchor=north,
+      font=\fontsize{20}{60}\selectfont,
+      align=center
+      ] (certify) at ([yshift=-8mm]attendance.south)
+      {This is to certify that};
+
+   \node[
+      anchor=north,
+      font=\fontsize{25}{60}\selectfont\bfseries,
+      align=center
+      ] (name) at ([yshift=-8mm]certify.south)
+      {NAME-TO-REPLACE};
+
+   \node[
+      anchor=north,
+      font=\fontsize{20}{60}\selectfont,
+      align=center
+      ] (attended) at ([yshift=-10mm]name.south)
+      {has attended the};
+
+   \node[
+      anchor=north,
+      font=\fontsize{23}{60}\selectfont\bfseries,
+      align=center
+      ] (workshop) at ([yshift=-8mm]attended.south)
+      {HYDROROM Workshop 2026};
+
+   \node[
+      anchor=north,
+      font=\fontsize{16}{16}\selectfont\bfseries,
+      align=center
+      ] (workshopsub) at ([yshift=-0mm]workshop.south)
+      {Workshop on Modeling and Simulation of Extreme Events};
+
+   \node[
+      anchor=north,
+      font=\fontsize{15}{15}\selectfont,
+      align=center
+      ] (where) at ([yshift=-7mm]workshopsub.south)
+      {Department of Mathematics ``Tullio Levi-Civita''\\[1ex]
+      University of Padua -- Italy\\[1ex]
+      February 26, 2026};
+
+   \node[
+      anchor=north,
+      font=\fontsize{13}{15}\selectfont,
+      align=center
+      ] (organizers) at ([yshift=-10mm]where.south)
+      {On the behalf of the organizers of the workshop\\[2ex]
+         Antonia Larese\\[0.5ex]
+         Elena Bachini\\[0.5ex]
+         Nicolò Crescenzio\\[0.5ex]
+         Deependra Kumar\\[0.5ex]
+         Damiano Pasetto};
+
+   \node[
+      anchor=north,
+      align=center,
+   ] (signature) at ([yshift=-2mm]organizers.south)
+   {
+      \includegraphics[width=40mm]{example-image-a}
+   };
+
+
+\end{tikzpicture}
+
+% foo
+% \lipsum[1-6]
+
+\end{document}

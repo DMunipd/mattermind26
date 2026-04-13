@@ -1,0 +1,27 @@
+# Site settings
+title: Workshop on Digital representation of complex materials across different scales, with an emphasis on engineering applications. A forum to highlight the crucial role of computational models, ROMs, and AI technologies in developing digital twins of materials
+url: "https://dmunipd.github.io"
+baseurl: '/mattermind_ws'
+
+conference_title: "MatterMind 2026"
+conference_title_short: "MatterMind Workshop"
+year: "2026"
+# infoline_text: "Thanks for attending the Workshop, see you again in two years!"
+
+# Color settings
+color:
+  primary-dark: '#8B0000'  # Rosso Unipd
+  primary-blue: '#0065BD'  # Blu TUM
+  title: '#FFFFFF'         # Bianco puro per massimo contrasto
+  links: '#00529B'         # Blu scuro, complementare al rosso
+  accent: '#FFD700'        # Oro, per un accento che si abbina bene al rosso
+
+# conference data
+# background-image: img/logos/kratos.png
+map-embed: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.4806085294563!2d11.87708007741257!3d45.39964717107303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477edb5bd2901f0d%3A0x66f388ba3a9987be!2sBarco%20Teatro!5e0!3m2!1sit!2sit!4v1769611036437!5m2!1sit!2sit
+organizer-email : antonia.larese@unipd.it
+registration-page : https://forms.gle/D2u8j1fHPRY7sdzi8
+
+# Build settings
+markdown: kramdown
+permalink: pretty

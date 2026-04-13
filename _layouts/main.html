@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <header>
+      {% include nav.html %}
+    </header>
+    <main>
+      {% include banner.html %}
+      {% include about.html %}
+      <!-- {% include speakers.html %}
+      {% include schedule.html %} -->
+      {% include venue.html %}
+      {% include organizers.html %}
+      {% include contributors.html %}
+    </main>
+    <footer class="page-footer" style="background-color: {{site.color.primary-dark}}">
+    </footer>
+    {% include js.html %}
+</body>
+</html>

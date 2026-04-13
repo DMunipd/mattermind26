@@ -1,0 +1,16 @@
+_site
+
+*.sublime-*
+
+Gemfile
+Gemfile.lock
+
+.bundle/
+vendor/
+
+*.aux
+*.log
+*.out
+
+.ipynb_checkpoints/
+.venv/
