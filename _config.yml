@@ -1,7 +1,7 @@
 # Site settings
 title: Workshop on Digital representation of complex materials across different scales, with an emphasis on engineering applications. A forum to highlight the crucial role of computational models, ROMs, and AI technologies in developing digital twins of materials
 url: "https://dmunipd.github.io"
-baseurl: '/mattermind_ws'
+baseurl: '/mattermind26'
 
 conference_title: "MatterMind 2026"
 conference_title_short: "MatterMind Workshop"
