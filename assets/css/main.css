@@ -2,20 +2,20 @@
 ---
 
 .tabs .tab a {
-   color: {{site.color.primary-dark}} !important;
+   color: {{site.color.primary-blue}} !important;
 }
 
 .tabs .tab a:hover {
-   color: {{site.color.primary-dark}} !important;
+   color: {{site.color.primary-blue}} !important;
 }
 
 .tabs .tab a:focus.active {
-   color: {{site.color.primary-dark}} !important;
+   color: {{site.color.primary-blue}} !important;
    background-color: white !important;
 }
 
 .tabs .indicator {
-   background-color:{{site.color.primary-dark}} !important;
+   background-color:{{site.color.primary-blue}} !important;
 }
 
 .navbar-fixed {
@@ -25,7 +25,7 @@
 
 .nav {
   box-shadow:none;
-  background-color: {{site.color.primary-dark}};
+  background-color: {{site.color.primary-blue}};
 }
 
 #navbarlink a:link
@@ -90,7 +90,7 @@
   padding-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: {{site.color.primary-dark}};
+  background-color: {{site.color.primary-blue}};
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -112,19 +112,19 @@
 .banner-heading{
   text-align:center;
   font-weight:bold;
-  color:{{site.color.primary-dark}};
+  color:{{site.color.primary-blue}};
   /* color:{{site.color.title}}; */
 }
 
 .banner-subheading{
   text-align:center;
   font-weight:bold;
-  color: {{site.color.primary-dark}};
+  color: {{site.color.primary-blue}};
   /* color: {{site.color.title}}; */
 }
 
 .sponsor-row{
-  background-color: {{site.color.primary-dark}};
+  background-color: {{site.color.primary-blue}};
   font-size: 25px;
   text-align: center;
   padding-top: 10px;
@@ -246,22 +246,26 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: 100%;
 }
 
 .logo-row {
   display: flex;
-  justify-content: center;
+  justify-content: center;  
+  align-items: center;
   gap: 20px;
-  width: 100%;
+  width: 90%;
 }
 
 .logo-link {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   max-width: 35%;
 }
 
 .logo-link.wide {
-  max-width: 80%; /* Circa la somma della larghezza dei due loghi sopra */
+  max-width: 45%;  /* due loghi affiancati con un po' di spazio */
 }
 
 .logo {
@@ -278,7 +282,9 @@
 
 .banner-container {
     position: relative;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;      /* centra il banner */
+    box-sizing: border-box;
 }
 
 .banner-image {
@@ -304,14 +310,14 @@
 
 .banner-button:hover {
     background-color: white !important;
-    color: {{site.color.primary-dark}} !important;
+    color: {{site.color.primary-blue}} !important;
 }
 
 @media (max-width: 600px) {
     .banner-overlay {
         position: static;
         padding: 20px 0;
-        background-color: {{site.color.primary-dark}};
+        background-color: {{site.color.primary-blue}};
     }
 }
 
