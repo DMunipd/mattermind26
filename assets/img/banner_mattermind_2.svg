@@ -13,9 +13,9 @@
    viewBox="0 0 1200 200"
    version="1.1"
    id="svg41"
-   sodipodi:docname="banner_mattermind.svg"
+   sodipodi:docname="banner_mattermind_2.svg"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   inkscape:export-filename="/home/antonia/git_webpages/mattermind26/assets/img/banner_mattermind.png"
+   inkscape:export-filename="/home/antonia/git_webpages/mattermind26/assets/img/banner_mattermind2.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <metadata
@@ -45,13 +45,13 @@
      inkscape:window-height="1043"
      id="namedview43"
      showgrid="false"
-     inkscape:zoom="0.81788687"
-     inkscape:cx="613.11803"
-     inkscape:cy="135.90857"
+     inkscape:zoom="1.1566667"
+     inkscape:cx="369.39395"
+     inkscape:cy="76.097351"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg41" />
+     inkscape:current-layer="Title_Layer" />
   <rect
      width="1200"
      height="200"
@@ -83,31 +83,7 @@
   </g>
   <g
      id="Title_Layer"
-     transform="translate(600, 65)">
-    <text
-       font-size="20"
-       font-weight="bold"
-       id="text38"
-       style="font-weight:bold;font-size:22px;font-family:Arial, Helvetica, sans-serif;fill:#0065bd;fill-opacity:1;stroke-width:1.10000002"
-       x="-26.370605"
-       y="-4.5115232">
-      <tspan
-         x="-26.370605"
-         dy="26.4"
-         id="tspan32"
-         style="fill:#0065bd;fill-opacity:1;stroke-width:1.10000002">WORKSHOP ON DIGITAL REPRESENTATION OF</tspan>
-      <tspan
-         x="-26.370605"
-         dy="30.799999"
-         id="tspan34"
-         style="fill:#0065bd;fill-opacity:1;stroke-width:1.10000002">COMPLEX MATERIALS ACROSS DIFFERENT SCALES,</tspan>
-      <tspan
-         x="-26.370605"
-         dy="30.799999"
-         id="tspan36"
-         style="fill:#0065bd;fill-opacity:1;stroke-width:1.10000002">WITH AN EMPHASIS ON ENGINEERING APPLICATIONS</tspan>
-    </text>
-  </g>
+     transform="translate(600, 65)" />
   <image
      y="18.33914"
      x="9.1190624"
